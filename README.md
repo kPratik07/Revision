@@ -1,10 +1,8 @@
 # Revision
 
-# Project Name
-
 ## Overview
 
-This project is a web application built using various technologies, including:
+This repository contains a revision of different topics I have covered during my curriculum, using various technologies, including:
 
 - **HTML**: For structuring the web content.
 - **CSS**: For styling the web pages.
