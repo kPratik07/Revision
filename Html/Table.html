@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f0f8ff;
+      color: #333;
+    }
+
+    .table-container {
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 600px; /* Ensures table doesn't get too narrow */
+    }
+
+    th,
+    td {
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f16053;
+      color: white;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    tfoot {
+      background-color: #597a9d;
+      color: white;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 10px;
+      }
+      th, td {
+        padding: 6px;
+      }
+    }
+  </style>
+  <body>
+    <div class="table-container">
+      <table border="2px solid">
+        <!-- Table Header -->
+        <thead>
+          <tr>
+            <th>Month</th>
+            <th>Product A Sales ($)</th>
+            <th>Product B Sales ($)</th>
+            <th>Total Sales ($)</th>
+          </tr>
+        </thead>
+
+        <!-- Table Body -->
+        <tbody>
+          <tr>
+            <td>January</td>
+            <td>1200</td>
+            <td>800</td>
+            <td>2000</td>
+          </tr>
+          <tr>
+            <td>February</td>
+            <td>1300</td>
+            <td>850</td>
+            <td>2150</td>
+          </tr>
+          <tr>
+            <td>March</td>
+            <td>1250</td>
+            <td>900</td>
+            <td>2150</td>
+          </tr>
+        </tbody>
+
+        <!-- Table Footer -->
+        <tfoot>
+          <tr>
+            <td>Total</td>
+            <td>3750</td>
+            <td>2550</td>
+            <td>6300</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </body>
+</html>
